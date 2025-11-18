@@ -46,7 +46,8 @@ cursor.execute("SELECT * FROM students WHERE course = %s", ('DS',))
 for row in cursor.fetchall(): 
  print(row)
 # Update a Student’s Course by Email
-update_query = "UPDATE students SET course = %s WHERE email = %s" cursor.execute(update_query, ("Data Science", "nandu@gmail.com")) 
+update_query = "UPDATE students SET course = %s WHERE email = %s" 
+cursor.execute(update_query, ("Data Science", "nandu@gmail.com")) 
 conn.commit()
 # Update Multiple Columns Together
 update_query = """UPDATE students
