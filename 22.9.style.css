@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  padding: 20px;
+}
+
+.tab-container {
+  max-width: 500px;
+  margin: auto;
+}
+
+/* Hide radio buttons */
+.tab-container input[type="radio"] {
+  display: none;
+}
+
+/* Tab Buttons */
+.tab {
+  display: inline-block;
+  padding: 10px 25px;
+  border: 1px solid #000;
+  background: #fefefe;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: all 0.3s;
+}
+
+.tab-container input[type="radio"]:checked + .tab {
+  background: #c8e6c9;  /* light green */
+  border: 1px solid #000;
+}
+
+/* Menu Box */
+.menu-box {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #000;
+  background: #fff;
+  box-shadow: 8px 8px 15px rgba(0,0,0,0.3);
+}
+
+/* Hide all menus by default */
+.menu {
+  display: none;
+}
+
+/* Show active menu */
+#eat:checked ~ .menu-box #eatMenu,
+#drink:checked ~ .menu-box #drinkMenu {
+  display: block;
+}
+
+.menu h3 {
+  margin: 15px 0 5px;
+  font-weight: bold;
+}
+
+.menu p {
+  margin: 0 0 10px;
+  color: #222;
+}

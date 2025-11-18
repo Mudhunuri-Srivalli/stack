@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #333;
+  text-align: center;
+}
+
+/* Header */
+header {
+  margin-top: 30px;
+}
+
+header h2 {
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: 300;
+  margin: 0;
+}
+
+header h1 {
+  font-size: 22px;
+  font-weight: 400;
+  margin: 5px 0 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 40px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background: #eee;
+}
+
+/* Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto 50px;
+}
+
+.gallery .item {
+  overflow: hidden;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(100%);
+  transition: transform 0.5s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.gallery .tall {
+  grid-row: span 2;
+}
+
+/* Footer */
+footer {
+  background: #f8f8f8;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #555;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}

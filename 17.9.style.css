@@ -1,0 +1,336 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f2f2;
+  color: #333;
+}
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 100vh;
+  background: #fff;
+  padding: 40px 20px;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar .name {
+  font-size: 18px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+.sidebar nav a {
+  display: block;
+  text-decoration: none;
+  color: #555;
+  margin: 20px 0;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.sidebar nav a:hover {
+  color: #000;
+}
+
+
+.gallery-container {
+  margin-left: 180px;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  display: inline-block;
+  margin: 0 4px;
+  padding: 6px 10px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  transition: 0.3s;
+}
+
+.pagination a:hover {
+  border: 1px solid #333;
+}
+
+.pagination a.active {
+  background: #333;
+  color: #fff;
+}
+
+.about {
+  background: #555;
+  color: #fff;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+.about h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.about-box {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.profile-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.about-text h3 {
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.bar {
+  background: #ccc;
+  border-radius: 2px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.bar div {
+  background: #333;
+  color: #fff;
+  text-align: right;
+  padding-right: 6px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 13px;
+}
+
+.resume-btn {
+  background: #333;
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.resume-btn:hover {
+  background: #222;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #777;
+  margin: 40px auto;
+  width: 80%;
+}
+
+
+.pricing {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.plan {
+  background: #333;
+  flex: 1 1 260px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.plan h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.plan p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+.plan .price {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.plan button {
+  background: #fff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.plan button:hover {
+  background: #ddd;
+}
+
+.contact {
+  padding: 40px 20px;
+  background: #fff;
+  color: #333;
+  text-align: center;
+}
+
+.contact h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.contact p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  width: 100%;
+}
+
+.contact-form button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #333;
+}
+
+
+.footer {
+  background: #f2f2f2;
+  padding: 40px 20px 20px;
+  color: #333;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-box {
+  flex: 1 1 250px;
+  min-width: 250px;
+}
+
+.footer-box h3 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.footer-box p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.blog-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.blog-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tags span {
+  background: #777;
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 2px;
+}
+
+.tags span.active {
+  background: #000;
+}
+
+.powered {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.powered a {
+  color: #333;
+  text-decoration: none;
+}
